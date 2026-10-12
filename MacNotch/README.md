@@ -6,14 +6,6 @@ It runs on Apple silicon and Intel Macs as a single universal app. On Macs and d
 
 **Version 2.0** · Requires macOS 13 Ventura or later. A few features need a newer version; they're marked below.
 
-## Download
-
-**[⬇️ Download MacNotch for macOS (MacNotch-Installer.dmg)](MacNotch-Installer.dmg)**
-
-Then follow [Install](#install) below.
-
----
-
 ## Contents
 
 - [Download](#download)
@@ -51,7 +43,7 @@ Then follow [Install](#install) below.
 
 ## Install
 
-1. [Download `MacNotch-Installer.dmg`](MacNotch-Installer.dmg) and open it.
+1. [Download `MacNotch-Installer.dmg`](https://github.com/muhammedilshad/MacNotch/raw/main/MacNotch/MacNotch-Installer.dmg) and open it.
 2. Drag **MacNotch** into **Applications**. To update, drag the new copy over the old one.
 3. Open it from Applications.
 
@@ -118,6 +110,7 @@ Works with **any app that shows up in the system's Now Playing**: Spotify, Apple
 On the **Home** page, the music card shows:
 
 - **Album artwork**, with the playing app's icon in the corner. Click the artwork to switch to that app.
+- **Video artwork** (**Music → Artwork → Video**): when YouTube is playing in Safari, Chrome, Arc, Edge, Brave, Vivaldi or Opera, the artwork becomes a muted copy of the video, kept in step with play, pause and seeking. Other apps, and videos whose owners block embedding, keep the poster.
 - **Song, artist and album.**
 - **Progress bar** with elapsed and remaining time. Drag it to seek.
 - **Previous, play/pause and next.**
@@ -361,7 +354,7 @@ Pages about how the notch looks show the same live preview: choose **Closed** or
 | **Notch** | Show the notch, expand on hover, pop open on new songs, side width, dashboard pages, this Mac's notch size |
 | **Appearance** | Style, picture, album-art colours, border, neon colour, shadow, corner radii, animations |
 | **Clock & Calendar** | Custom text, 12/24-hour, seconds, date format, world clocks, calendar, meeting countdown, reminders |
-| **Music** | Show music, progress bar, volume, Spotify buttons, waveform, real-audio waveform, now playing |
+| **Music** | Show music, progress bar, volume, Spotify buttons, artwork (poster or video), waveform, real-audio waveform, now playing |
 | **Battery** | Charging animation and glow, level beside the notch, previews, unplug reminder, low-battery warnings, battery health |
 | **Shelf & Clipboard** | Shelf page, clear shelf, download tracking, clipboard history and size, clear history |
 | **Focus & Actions** | Focus and break lengths, sessions per cycle, OCR, quick actions editor |
@@ -381,6 +374,7 @@ macOS asks for each permission the first time the feature needs it. Everything e
 | Screen Recording | Screenshot OCR | Privacy & Security → Screen & System Audio Recording |
 | Accessibility | Notification hub (Dock badges) | Privacy & Security → Accessibility |
 | Automation (Spotify, Music) | Spotify shuffle and repeat; controls if Now Playing is unavailable | Privacy & Security → Automation |
+| Automation (browsers) | Finding the playing YouTube tab for video artwork | Privacy & Security → Automation |
 | Downloads folder | File transfers | Privacy & Security → Files & Folders |
 
 ## Privacy and data storage
@@ -456,6 +450,7 @@ To distribute the app publicly, sign and notarise it with an Apple Developer ID:
 | `MainView.swift` | Main window: sidebar, live preview and all settings panes |
 | `AppSettings.swift` | Saved preferences, picture import, launch at login |
 | `SettingsTypes.swift` | Theme options, dashboard pages, date formats, quick actions |
+| `VideoArtwork.swift` | Finds the playing YouTube tab and shows it as muted, synced video artwork |
 | `NowPlayingMonitor.swift` | Now Playing from any app, controls, seeking, artwork colours, Spotify |
 | `Adapter/NowPlayingAdapter.m` | Helper loaded into `/usr/bin/perl` to read the system Now Playing state, which macOS only shares with Apple-signed processes |
 | `AudioController.swift` | Audio devices, default output and input, volume and mute |
