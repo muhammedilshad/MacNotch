@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>MacNotch</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.dd.macnotch</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>MacNotch</string>
+	<key>CFBundleDisplayName</key>
+	<string>MacNotch</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<false/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>MacNotch uses this to play, pause and skip songs in Apple Music and Spotify when the system Now Playing controls are unavailable, and for Spotify shuffle and repeat.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>MacNotch shows today's events in the expanded notch.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>MacNotch shows today's events in the expanded notch.</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>MacNotch listens to what your Mac is playing so the waveform in the notch moves with the music. Nothing is recorded or saved.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>MacNotch shows downloads in progress and files you just received in the notch.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright 2026 Dd Custom</string>
+</dict>
+</plist>
